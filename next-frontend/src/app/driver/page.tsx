@@ -2,7 +2,7 @@ import { RouteModel } from "../../utils/models";
 import { MapDriver } from "./MapDriver";
 
 export async function getRoutes() {
-  const response = await fetch("http://localhost:3000/routes", {
+  const response = await fetch("http://localhost:8080/routes", {
     cache: "force-cache",
     next: {
       tags: ["routes"],

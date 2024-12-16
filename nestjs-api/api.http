@@ -1,18 +1,18 @@
-GET http://localhost:3000/places?text=av governador valadares, betim, 1000
+GET http://localhost:8080/places?text=av visconde rio branco, 3556
 
 ###
-GET http://localhost:3000/places?text=av amazonas, belo horizonte, 1000
+GET http://localhost:8080/places?text=av amazonas, belo horizonte, 1000
 
 ###
  ChIJMyzPysqQpgARlznSOl55NVs
-@originId = ChIJmx-wX0rCpgARjxH_rJ8d5do
-@destinationId = ChIJTcM3WRKWpgARIBxMZeldEtM
+@originId = ChIJp2Gnxd1IxwcROukAhSHZ8_c
+@destinationId = ChIJPUqddeKZpgARusD9CDpIBDQ
 
 ###
-GET http://localhost:3000/directions?originId={{ originId }}&destinationId={{ destinationId }}
+GET http://localhost:8080/directions?originId={{ originId }}&destinationId={{ destinationId }}
 
 ###
-POST http://localhost:3000/routes
+POST http://localhost:8080/routes
 Content-Type: application/json
 
 {
@@ -22,7 +22,7 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:3000/routes
+GET http://localhost:8080/routes
 
 ###
-GET http://localhost:3000/routes/674ef78bab1148ea9161c23b
+GET http://localhost:8080/routes/674ef78bab1148ea9161c23b
